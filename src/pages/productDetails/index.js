@@ -1,45 +1,38 @@
 import React from 'react';
-import { Switch, Route, Link, useRouteMatch } from 'react-router-dom';
-import Introduction from '../productDetails/TabIntroduction';
-import FAQ from '../productDetails/TabFAQ';
-import Process from '../productDetails/TabProcess';
-import Comments from '../productDetails/TabComments';
+import Badge from '../../compnents/UI/Badge.js';
+import ProductInfo from '../../compnents/productDetails/ProductInfo';
+import ProductInfoTabs from '../../compnents/productDetails/ProductInfoTabs.js';
+import PriductImg from '../../assets/images/produt_image.jpeg';
 
 function ProductDetails() {
-  const { url } = useRouteMatch();
+  const product = {
+    title: '拍出會動的照片｜LivePhotos 魔法拍立得',
+    name: 'LivePhotos 魔法拍立得',
+    cate: '魔法科技',
+    img: PriductImg,
+    target: '600,000',
+    currentAmount: '280,047',
+    remainingDays: '27',
+    sponsors: '1374',
+    deadline: '2021/06/14 23:59',
+  };
   return (
     <div>
-      ProductDetails
-      <ul>
-        <li>
-          <Link to={`${url}/introductoin`}>專案介紹</Link>
-        </li>
-        <li>
-          <Link to={`${url}/FAQ`}>常見問答</Link>
-        </li>
-        <li>
-          <Link to={`${url}/process`}>目前進度</Link>
-        </li>
-        <li>
-          <Link to={`${url}/comments`}>留言</Link>
-        </li>
-      </ul>
-      <main>
-        <Switch>
-          <Route path={`${url}/introductoin`} exact>
-            <Introduction />
-          </Route>
-          <Route path={`${url}/FAQ`} exact>
-            <FAQ />
-          </Route>
-          <Route path={`${url}/process`} exact>
-            <Process />
-          </Route>
-          <Route path={`${url}/comments`} exact>
-            <Comments />
-          </Route>
-        </Switch>
-      </main>
+      <div className='py-12'>
+        <Badge>{product.cate}</Badge>
+        <h2 class='text-3xl text-font-title font-bold tracking-widest mb-6'>{product.title}</h2>
+        <div className='grid grid-cols-12 gap-x-6'>
+          <img src={product.img} alt={product.name} className='col-span-7' />
+          <ProductInfo
+            target={product.target}
+            currentAmount={product.currentAmount}
+            remainingDays={product.remainingDays}
+            sponsors={product.sponsors}
+            deadline={product.deadline}
+          />
+        </div>
+      </div>
+      <ProductInfoTabs />
     </div>
   );
 }
