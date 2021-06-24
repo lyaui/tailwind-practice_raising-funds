@@ -6,7 +6,7 @@ import ProductDetails from './pages/productDetails';
 function App() {
   return (
     <BrowserRouter>
-      <div className='App bg-gray-default h-screen relative'>
+      <div className='App bg-gray-bg h-screen relative'>
         <Navbar />
         <div className='container bg-yellow-100 '>
           <Switch>

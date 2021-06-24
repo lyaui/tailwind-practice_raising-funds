@@ -8,8 +8,15 @@ module.exports = {
       },
       colors: {
         gray: {
-          default: '#F8F9FA',
+          bg: '#F8F9FA',
         },
+        yellow: {
+          DEFAULT: '#FFDF65',
+        },
+        font: { link: '#636057' },
+      },
+      borderWidth: {
+        5: '5px',
       },
     },
   },
