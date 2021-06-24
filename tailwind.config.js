@@ -13,7 +13,14 @@ module.exports = {
         yellow: {
           DEFAULT: '#FFDF65',
         },
-        font: { link: '#636057' },
+        font: { link: '#636057', title: '#494846 ' },
+      },
+      fontSize: {
+        '3xl': '2rem',
+      },
+      fontFamily: {
+        NotoSans: ['Noto Sans TC'], // 英文字型
+        BalooTamma: ['Baloo Tamma 2'], // 中文字型
       },
       borderWidth: {
         5: '5px',

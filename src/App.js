@@ -6,9 +6,9 @@ import ProductDetails from './pages/productDetails';
 function App() {
   return (
     <BrowserRouter>
-      <div className='App bg-gray-bg h-screen relative'>
+      <div className='App bg-gray-bg h-screen relative font-NotoSans'>
         <Navbar />
-        <div className='container bg-yellow-100 '>
+        <div className='container'>
           <Switch>
             <Route path='/product-details'>
               <ProductDetails />
