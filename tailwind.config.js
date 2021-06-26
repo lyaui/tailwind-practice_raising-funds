@@ -8,8 +8,10 @@ module.exports = {
       },
       colors: {
         gray: {
-          bg: '#F8F9FA',
           DEFAULT: '#858377',
+          bg: '#F8F9FA',
+          bar: '#eeeeee',
+          tabBorder: '#E8E8DB',
         },
         yellow: {
           DEFAULT: '#FFDF65',
@@ -20,13 +22,14 @@ module.exports = {
         '3xl': '2rem',
       },
       fontFamily: {
-        NotoSans: ['Noto Sans TC'], // 英文字型
-        BalooTamma: ['Baloo Tamma 2'], // 中文字型
+        NotoSans: ['Noto Sans TC'],
+        BalooTamma: ['Baloo Tamma 2'],
       },
       letterSpacing: {
         widest: '.1875rem',
       },
       borderWidth: {
+        3: '3px',
         5: '5px',
       },
     },
