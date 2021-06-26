@@ -10,10 +10,11 @@ function ProductDetails() {
     name: 'LivePhotos 魔法拍立得',
     cate: '魔法科技',
     img: PriductImg,
-    target: '600,000',
-    currentAmount: '280,047',
-    remainingDays: '27',
-    sponsors: '1374',
+    target: 600000,
+    currentAmount: 280047,
+    targetPercent: 0.41,
+    remainingDays: 27,
+    sponsors: 1374,
     deadline: '2021/06/14 23:59',
   };
   return (
@@ -25,6 +26,7 @@ function ProductDetails() {
           <img src={product.img} alt={product.name} className='col-span-7' />
           <ProductInfo
             target={product.target}
+            targetPercent={product.targetPercent}
             currentAmount={product.currentAmount}
             remainingDays={product.remainingDays}
             sponsors={product.sponsors}
