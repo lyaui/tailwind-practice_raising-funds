@@ -13,6 +13,9 @@ function PerkItemCard({ PerkItems }) {
           <span className='ml-auto'>{leftDays}</span>
         </div>
         <div className='text-lg font-bold tracking-wider text-font-title py-2'>{title}</div>
+        <div className='mb-2'>
+          <span className='font-BalooTamma text-2xl text-font-title font-bold'>NT$ {price}</span>
+        </div>
         <div className='flex mb-2'>
           <Badge className='bg-gray-tabBorder text-gray mr-2'>
             已被贊助 <span>{sponsoredTimes}</span> 次
