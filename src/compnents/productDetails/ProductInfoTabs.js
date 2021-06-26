@@ -38,7 +38,7 @@ function ProductInfoTabs() {
         <ul className='flex items-center border-t border-b'>
           <div className='container flex'>{renderTabItems}</div>
         </ul>
-        <main className='container grid grid-cols-12 py-12'>
+        <main className='container grid grid-cols-12 gap-x-6 py-12'>
           <div className='col-span-8'>
             <Switch>{renderRouteItems}</Switch>
           </div>
