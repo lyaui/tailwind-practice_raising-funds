@@ -4,6 +4,7 @@ import Introduction from '../../pages/productDetails/TabIntroduction';
 import FAQ from '../../pages/productDetails/TabFAQ';
 import Process from '../../pages/productDetails/TabProcess';
 import Comments from '../../pages/productDetails/TabComments';
+import PerkInfo from '../../compnents/productDetails/PerkInfo.js';
 
 function ProductInfoTabs() {
   const { url } = useRouteMatch();
@@ -36,8 +37,11 @@ function ProductInfoTabs() {
       <ul className='flex items-center bg-white border-t border-b'>
         <div className='container flex'>{renderTabItems}</div>
       </ul>
-      <main className='container py-12'>
-        <Switch>{renderRouteItems}</Switch>
+      <main className='container grid grid-cols-12 py-12'>
+        <div className='col-span-8'>
+          <Switch>{renderRouteItems}</Switch>
+        </div>
+        <PerkInfo className='col-span-4' />
       </main>
     </Fragment>
   );
