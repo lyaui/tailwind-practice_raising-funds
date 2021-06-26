@@ -8,19 +8,19 @@ function TabProcess() {
   const processItems = [
     {
       image: ProjectProcerssImg1,
-      titile: '高雄體驗會｜免費參加送帆布袋',
+      title: '高雄體驗會｜免費參加送帆布袋',
       date: '2021-6-20',
       desc: '大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！',
     },
     {
       image: ProjectProcerssImg2,
-      titile: '高雄體驗會｜免費參加送帆布袋',
+      title: '高雄體驗會｜免費參加送帆布袋',
       date: '2021-6-20',
       desc: '大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！',
     },
     {
       image: ProjectProcerssImg3,
-      titile: '高雄體驗會｜免費參加送帆布袋',
+      title: '高雄體驗會｜免費參加送帆布袋',
       date: '2021-6-20',
       desc: '大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！',
     },

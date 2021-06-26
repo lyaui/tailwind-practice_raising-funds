@@ -16,6 +16,7 @@ module.exports = {
         },
         yellow: {
           DEFAULT: '#FFDF65',
+          dark: '#FF785E',
         },
         font: { link: '#636057', title: '#494846' },
       },
