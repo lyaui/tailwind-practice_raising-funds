@@ -18,8 +18,8 @@ function ProductDetails() {
     deadline: '2021/06/14 23:59',
   };
   return (
-    <div>
-      <div className='py-12'>
+    <div className='bg-gray-bg'>
+      <div className='container py-12'>
         <Badge>{product.cate}</Badge>
         <h2 class='text-3xl text-font-title font-bold tracking-widest mb-6'>{product.title}</h2>
         <div className='grid grid-cols-12 gap-x-6'>
