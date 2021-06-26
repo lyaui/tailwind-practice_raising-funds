@@ -21,7 +21,7 @@ function Navbar() {
     <header className='bg-white py-4 border-b-5 border-yellow'>
       <div className='container flex items-center'>
         <h1>
-          <Link path='/' title='拼拼'>
+          <Link to='/' title='拼拼'>
             <img src={logo} alt='拼拼' className='w-28 h-10' />
           </Link>
         </h1>

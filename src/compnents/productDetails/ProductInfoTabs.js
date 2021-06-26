@@ -13,33 +13,31 @@ function ProductInfoTabs() {
     { label: '目前進度', path: `${url}/process` },
     { label: '留言', path: `${url}/comments` },
   ];
+  const RouteItems = [
+    { path: `${url}/introductoin`, component: <Introduction /> },
+    { path: `${url}/FAQ`, component: <FAQ /> },
+    { path: `${url}/process`, component: <Process /> },
+    { path: `${url}/comments`, component: <Comments /> },
+  ];
   const renderTabItems = tabItems.map(({ path, label }) => (
-    <li className='py-6 text-bold text-font-link'>
-      <Link className='px-5 py-6' to={path}>
+    <li className='py-6 text-bold text-font-link' key={path}>
+      <Link className='px-5 py-6' to={label}>
         {label}
       </Link>
     </li>
   ));
+  const renderRouteItems = RouteItems.map(({ path, component }) => (
+    <Route path={path} exact key={path}>
+      {component}
+    </Route>
+  ));
   return (
     <Fragment>
-      <ul class='flex items-center bg-white border-t border-b'>
+      <ul className='flex items-center bg-white border-t border-b'>
         <div className='container flex'>{renderTabItems}</div>
       </ul>
-      <main class='container'>
-        <Switch>
-          <Route path={`${url}/introductoin`} exact>
-            <Introduction />
-          </Route>
-          <Route path={`${url}/FAQ`} exact>
-            <FAQ />
-          </Route>
-          <Route path={`${url}/process`} exact>
-            <Process />
-          </Route>
-          <Route path={`${url}/comments`} exact>
-            <Comments />
-          </Route>
-        </Switch>
+      <main className='container py-12'>
+        <Switch>{renderRouteItems}</Switch>
       </main>
     </Fragment>
   );
