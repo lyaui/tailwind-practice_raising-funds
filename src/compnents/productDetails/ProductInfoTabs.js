@@ -7,23 +7,25 @@ import Comments from '../../pages/productDetails/TabComments';
 
 function ProductInfoTabs() {
   const { url } = useRouteMatch();
+  const tabItems = [
+    { label: '專案介紹', path: `${url}/introductoin` },
+    { label: '常見問答', path: `${url}/FAQ` },
+    { label: '目前進度', path: `${url}/process` },
+    { label: '留言', path: `${url}/comments` },
+  ];
+  const renderTabItems = tabItems.map(({ path, label }) => (
+    <li className='py-6 text-bold text-font-link'>
+      <Link className='px-5 py-6' to={path}>
+        {label}
+      </Link>
+    </li>
+  ));
   return (
     <Fragment>
-      <ul class='flex items-center'>
-        <li>
-          <Link to={`${url}/introductoin`}>專案介紹</Link>
-        </li>
-        <li>
-          <Link to={`${url}/FAQ`}>常見問答</Link>
-        </li>
-        <li>
-          <Link to={`${url}/process`}>目前進度</Link>
-        </li>
-        <li>
-          <Link to={`${url}/comments`}>留言</Link>
-        </li>
+      <ul class='flex items-center bg-white border-t border-b'>
+        <div className='container flex'>{renderTabItems}</div>
       </ul>
-      <main>
+      <main class='container'>
         <Switch>
           <Route path={`${url}/introductoin`} exact>
             <Introduction />
