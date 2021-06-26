@@ -6,7 +6,7 @@ import ProductDetails from './pages/productDetails';
 function App() {
   return (
     <BrowserRouter>
-      <div className='App h-screen relative font-NotoSans'>
+      <div className='App h-screen font-NotoSans'>
         <Navbar />
         <Switch>
           <Route path='/product-details'>
@@ -16,8 +16,8 @@ function App() {
             <Redirect to='/product-details/introductoin' />
           </Route>
         </Switch>
+        <Footer />
       </div>
-      <Footer />
     </BrowserRouter>
   );
 }
