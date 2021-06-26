@@ -27,6 +27,9 @@ function PerkInfo() {
   return (
     <div className='col-span-4'>
       <ProposerInfo proposerInfo={proposerInfo} />
+      <div className='mb-4 text-lg text-center font-bold tracking-wider text-font-title bg-gray-bg p-1.5 border-l-3 border-r-3 rounded-lg border-yellow'>
+        選擇一個方案來支持
+      </div>
       {renderPerkItems}
     </div>
   );
