@@ -20,7 +20,6 @@ function ProposerInfo({ proposerInfo }) {
           </p>
         </div>
       </div>
-      <FontAwesomeIcon icon={['fal', 'coffee']} />
       <div className='tracking-wider text-gray mb-4'>{intro}</div>
       <div className='flex'>
         <div className='bg-gray w-7.5 h-7.5 rounded-full flex items-center justify-center cursor-pointer text-white mr-2'>

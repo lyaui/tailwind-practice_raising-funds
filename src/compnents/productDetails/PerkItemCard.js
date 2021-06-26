@@ -21,7 +21,7 @@ function PerkItemCard({ PerkItems }) {
             已被贊助 <span>{sponsoredTimes}</span> 次
           </Badge>
           <Badge>
-            限量 <span class='text-yellow'>{limitedAmount}</span> 個
+            限量 <span className='text-yellow'>{limitedAmount}</span> 個
           </Badge>
         </div>
         <div className='text-gray tracking-wider mb-4'> {desc}</div>
