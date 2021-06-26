@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 function TabFAQ() {
-  return <div>TabFAQ</div>;
+  return <Fragment>TabFAQ</Fragment>;
 }
 
 export default TabFAQ;

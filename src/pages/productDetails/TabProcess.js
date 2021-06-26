@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ProcessCard from '../../compnents/productDetails/ProcessCard.js';
 import ProjectProcerssImg1 from '../../assets/images/news01.jpeg';
 import ProjectProcerssImg2 from '../../assets/images/news02.jpeg';
@@ -29,7 +29,7 @@ function TabProcess() {
   const renderProcessItems = processItems.map((item, idx) => (
     <ProcessCard processItem={item} key={idx} />
   ));
-  return <div>{renderProcessItems}</div>;
+  return <Fragment>{renderProcessItems}</Fragment>;
 }
 
 export default TabProcess;
