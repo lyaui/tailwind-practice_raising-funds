@@ -21,7 +21,7 @@ function ProductInfoTabs() {
     { path: `${url}/comments`, component: <Comments /> },
   ];
   const renderTabItems = tabItems.map(({ path, label }) => (
-    <li className='py-6 text-bold text-font-link' key={path}>
+    <li className='py-6 font-bold text-font-link' key={path}>
       <Link className='px-5 py-6' to={path}>
         {label}
       </Link>
@@ -41,7 +41,7 @@ function ProductInfoTabs() {
         <div className='col-span-8'>
           <Switch>{renderRouteItems}</Switch>
         </div>
-        <PerkInfo className='col-span-4' />
+        <PerkInfo />
       </main>
     </Fragment>
   );
