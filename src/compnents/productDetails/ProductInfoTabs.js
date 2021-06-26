@@ -21,7 +21,7 @@ function ProductInfoTabs() {
   ];
   const renderTabItems = tabItems.map(({ path, label }) => (
     <li className='py-6 text-bold text-font-link' key={path}>
-      <Link className='px-5 py-6' to={label}>
+      <Link className='px-5 py-6' to={path}>
         {label}
       </Link>
     </li>
