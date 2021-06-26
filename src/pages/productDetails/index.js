@@ -34,7 +34,7 @@ function ProductDetails() {
           />
         </div>
       </div>
-      <ProductInfoTabs />
+      <ProductInfoTabs className='col-span-5' />
     </div>
   );
 }
