@@ -12,6 +12,7 @@ module.exports = {
           bg: '#F8F9FA',
           bar: '#eeeeee',
           tabBorder: '#E8E8DB',
+          cardBorder: '#E5E5E5',
         },
         yellow: {
           DEFAULT: '#FFDF65',
@@ -31,6 +32,13 @@ module.exports = {
       borderWidth: {
         3: '3px',
         5: '5px',
+      },
+      borderRadius: {
+        '4xl': '2.5rem',
+      },
+      spacing: {
+        7.5: '1.875rem',
+        25: '6.25rem',
       },
     },
   },

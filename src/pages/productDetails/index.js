@@ -23,7 +23,7 @@ function ProductDetails() {
         <Badge>{product.cate}</Badge>
         <h2 className='text-3xl text-font-title font-bold tracking-widest mb-6'>{product.title}</h2>
         <div className='grid grid-cols-12 gap-x-6'>
-          <img src={product.img} alt={product.name} className='col-span-7' />
+          <img src={product.img} alt={product.name} className='col-span-7 rounded-4xl' />
           <ProductInfo
             target={product.target}
             targetPercent={product.targetPercent}
