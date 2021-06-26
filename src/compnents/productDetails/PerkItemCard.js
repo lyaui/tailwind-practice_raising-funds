@@ -1,11 +1,12 @@
 import React from 'react';
 import Badge from '../UI/Badge';
+import Card from '../UI/Card';
 
 function PerkItemCard({ PerkItems }) {
   const { image, isLimitedTimeOffer, leftDays, title, price, sponsoredTimes, limitedAmount, desc } =
     PerkItems;
   return (
-    <div className='border rounded-lg border-gray-cardBorder overflow-hidden mb-4'>
+    <Card className='overflow-hidden mb-4'>
       <img src={image} alt={title} className='h-28 w-full object-cover' />
       <div className='px-4 py-2'>
         <div className='flex justify-between pb-2 border-b text-font-link tracking-wider'>
@@ -26,7 +27,7 @@ function PerkItemCard({ PerkItems }) {
         </div>
         <div className='text-gray tracking-wider mb-4'> {desc}</div>
       </div>
-    </div>
+    </Card>
   );
 }
 

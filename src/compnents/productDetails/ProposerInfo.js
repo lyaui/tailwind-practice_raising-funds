@@ -6,7 +6,7 @@ import Card from '../UI/Card';
 function ProposerInfo({ proposerInfo }) {
   const { avatar, project, name, intro } = proposerInfo;
   return (
-    <Card className='mb-8'>
+    <Card className='mb-8 p-4'>
       <div className='flex items-center mb-4'>
         <img
           src={avatar}
