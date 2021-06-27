@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 
 function TabFAQ() {
-  return <Fragment>TabFAQ</Fragment>;
+  return <Fragment></Fragment>;
 }
 
 export default TabFAQ;

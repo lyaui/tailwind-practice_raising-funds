@@ -13,6 +13,8 @@ module.exports = {
           bar: '#eeeeee',
           tabBorder: '#E8E8DB',
           cardBorder: '#E5E5E5',
+          form: '#F7F7F7',
+          placeholder: '#999999',
         },
         yellow: {
           DEFAULT: '#FFDF65',

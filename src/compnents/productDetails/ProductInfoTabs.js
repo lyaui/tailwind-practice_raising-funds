@@ -5,6 +5,7 @@ import FAQ from '../../pages/productDetails/TabFAQ';
 import Process from '../../pages/productDetails/TabProcess';
 import Comments from '../../pages/productDetails/TabComments';
 import PerkInfo from '../../compnents/productDetails/PerkInfo.js';
+import SupportForm from '../../compnents/productDetails/SupportForm';
 
 function ProductInfoTabs() {
   const { url } = useRouteMatch();
@@ -41,6 +42,7 @@ function ProductInfoTabs() {
         <main className='container grid grid-cols-12 gap-x-6 py-12'>
           <div className='col-span-8'>
             <Switch>{renderRouteItems}</Switch>
+            <SupportForm />
           </div>
           <PerkInfo />
         </main>
