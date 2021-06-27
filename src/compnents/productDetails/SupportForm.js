@@ -2,6 +2,7 @@ import React from 'react';
 import * as Icon from '../Icons/index';
 import classes from './SupportForm.module.css';
 import { SupportFormInput, SupportFormSelector } from './SupportFormItem.js';
+import Button from '../UI/Button';
 
 function SupportForm() {
   return (
@@ -20,6 +21,9 @@ function SupportForm() {
         <SupportFormInput label='聯絡電話' type='tel' id='phone' />
         <SupportFormInput label='連絡信箱' type='email' id='email' />
         <SupportFormSelector label='付款方式' placeholder='信用卡付款' id='payway' />
+        <Button className='text-font-link text-xl bg-yellow py-2.5 px-12 block mx-auto mt-6'>
+          贊助專案
+        </Button>
       </form>
     </div>
   );
