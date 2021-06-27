@@ -4,7 +4,7 @@ export const SupportFormInput = ({ label, type, id }) => {
   return (
     <div className='mb-4'>
       <label className='block mb-2 text-font-title' htmlFor={id}>
-        收件人姓名
+        {label}
       </label>
       <input
         type={type}
