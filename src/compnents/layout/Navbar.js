@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.jpeg';
+import Button from '../UI/Button';
 
 function Navbar() {
   // TODO btn
@@ -25,8 +26,12 @@ function Navbar() {
             <img src={logo} alt='拼拼' className='w-28 h-10' />
           </Link>
         </h1>
-        <nav>
+        <nav className='flex items-center justify-between w-full'>
           <ul className='flex'> {renderNavItems}</ul>
+          <div className='flex'>
+            <Button className='text-font-link bg-yellow mr-4'>登入</Button>
+            <Button className='text-gray border-2 border-gray'>註冊</Button>
+          </div>
         </nav>
       </div>
     </header>
