@@ -1,6 +1,9 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart, faShareAlt } from '@fortawesome/free-solid-svg-icons';
 import * as Icon from '../../compnents/Icons';
 import ProcessBar from '../../compnents/productDetails/ProcessBar';
+import Button from '../UI/Button';
 
 const numberWithCommas = (num) => {
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -37,13 +40,23 @@ function productInfo({ target, targetPercent, currentAmount, remainingDays, spon
           </span>
         </div>
       </div>
-
       <div className='flex'> {renderIcons}</div>
-      <div className='bg-white py-3.5 px-4 border-l-3 border-yellow rounded-lg'>
+      <div className='bg-white py-3.5 px-4 mb-6 border-l-3 border-yellow rounded-lg'>
         <p>專案募資中！</p>
         <p>
           在 <span className='font-bold'>{deadline}</span> 募資結束前，您都可以贊助我們！
         </p>
+      </div>
+      <Button className='text-font-link text-xl bg-yellow w-full py-2.5'>贊助專案</Button>
+      <div className='grid grid-cols-5 gap-x-2 mt-2 w-full'>
+        <Button className='text-gray border-2 border-gray text-xl py-2.5 col-span-3'>
+          <FontAwesomeIcon icon={faHeart} className='mr-2' />
+          追蹤專案
+        </Button>
+        <Button className='text-gray border-2 border-gray text-xl py-2.5 col-span-2'>
+          <FontAwesomeIcon icon={faShareAlt} className='mr-2' />
+          分享
+        </Button>
       </div>
     </div>
   );
