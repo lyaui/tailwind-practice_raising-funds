@@ -29,8 +29,8 @@ function Navbar() {
         <nav className='flex items-center justify-between w-full'>
           <ul className='flex'> {renderNavItems}</ul>
           <div className='flex'>
-            <Button className='text-font-link bg-yellow mr-4'>登入</Button>
-            <Button className='text-gray border-2 border-gray'>註冊</Button>
+            <Button className='text-font-link bg-yellow mr-4 py-2'>登入</Button>
+            <Button className='text-gray border-2 border-gray py-2'>註冊</Button>
           </div>
         </nav>
       </div>
